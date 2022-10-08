@@ -15,14 +15,16 @@ public final class CalculatorTest implements UnitTest {
     }
 
     @Test
-    public boolean testAddition() {
-        // assert calculator.calculate(1, "+", 1) == 2;
-        return calculator.calculate(1, "+", 1) == 2;
+    public void testAddition() {
+        assert calculator.calculate(1, "+", 1) == 2;
+        // return calculator.calculate(1, "+", 1) == 2;
+        System.out.println("test pass");
     }
 
     @Test
-    public boolean testSubtraction() {
-        //assert calculator.calculate(45, "-", 43) == 0;
-        return calculator.calculate(45, "-", 43) == 0;
+    public void testSubtraction() {
+        assert calculator.calculate(45, "-", 43) == 0;
+        //return calculator.calculate(45, "-", 43) == 0;
+        System.out.println("test fail");
     }
 }

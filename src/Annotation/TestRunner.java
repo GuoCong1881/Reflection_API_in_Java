@@ -26,6 +26,7 @@ public final class TestRunner {
                 throw new IllegalArgumentException("Class " + klass.toString() + "must implement UnitTest");
             }
 
+            /**
             for (Method method: klass.getDeclaredMethods()){
                 if (method.getAnnotation(Test.class) != null){
                     try {
@@ -43,21 +44,23 @@ public final class TestRunner {
                     }
                 }
             }
-            /**
-             *       for (Method method : klass.getDeclaredMethods()) {
-             *         if (method.getAnnotation(Test.class) != null) {
-             *           try {
-             *             UnitTest test = (UnitTest) klass.getConstructor().newInstance();
-             *             test.beforeEachTest();
-             *             method.invoke(test);
-             *             test.afterEachTest();
-             *             passed.add(getTestName(klass, method));
-             *           } catch (Throwable throwable) {
-             *             failed.add(getTestName(klass, method));
-             *           }
-             *         }
-             *       }
              */
+
+
+            for (Method method : klass.getDeclaredMethods()) {
+              if (method.getAnnotation(Test.class) != null) {
+                try {
+                  UnitTest test = (UnitTest) klass.getConstructor().newInstance();
+                  test.beforeEachTest();
+                  method.invoke(test);
+                  test.afterEachTest();
+                  passed.add(getTestName(klass, method));
+                } catch (Throwable throwable) {
+                  failed.add(getTestName(klass, method));
+                }
+              }
+            }
+
 
             // TODO: For each method that is annotated with @Test:
             //        1. Call beforeEachTest()

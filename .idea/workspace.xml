@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac75613a-b765-4e95-9cac-9a754c02c1de" name="Changes" comment="Defining custom annotation">
-      <change afterPath="$PROJECT_DIR$/src/Annotation/TestRunner.java" afterDir="false" />
+    <list default="true" id="ac75613a-b765-4e95-9cac-9a754c02c1de" name="Changes" comment="Defining custom annotation Exercise: built an in-house testing framework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Annotation/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Annotation/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Annotation/InHouseTestingFramework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Annotation/Exercise_InHouseTestingFramework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Annotation/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Annotation/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +34,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.TestRunner">
+}</component>
+  <component name="RunManager" selected="Application.Annotation.TestRunner">
     <configuration name="Annotation.CartItem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Annotation.CartItem" />
       <module name="Reflection_API_in_Java" />
@@ -54,9 +53,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Annotation.TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Annotation.TestRunner" />
       <module name="Reflection_API_in_Java" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Annotation.*" />
@@ -67,9 +67,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Annotation.CartItem" />
+      <item itemvalue="Application.Annotation.TestRunner" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestRunner" />
+        <item itemvalue="Application.Annotation.TestRunner" />
         <item itemvalue="Application.Annotation.CartItem" />
       </list>
     </recent_temporary>
@@ -97,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665197865669</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Defining custom annotation Exercise: built an in-house testing framework">
+      <created>1665202911304</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665202911304</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
     <MESSAGE value="Defining custom annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defining custom annotation" />
+    <MESSAGE value="Defining custom annotation Exercise: built an in-house testing framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defining custom annotation Exercise: built an in-house testing framework" />
   </component>
 </project>
