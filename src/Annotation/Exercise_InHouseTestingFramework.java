@@ -1,8 +1,8 @@
 package Annotation;
 
-public class InHouseTestingFramework {
+public class Exercise_InHouseTestingFramework {
 /**
- * Background:
+ * Part I Background:
  *
  *
  * Your team at Udacisearch has a lot of business logic written in Java, but the test coverage is not very good!
@@ -38,6 +38,39 @@ public class InHouseTestingFramework {
  * If you need a reminder about these concepts, you can go back to the previous page in this lesson.
  *
  * Next, open up CalculatorTest.java and annotate the testAddition and testSubtraction methods with the new @Test annotation.
+ */
+
+/**
+ * Part 2
+ *
+ * Now, it's time to fill out TestRunner.java which decides which tests to run (by finding methods annotated with
+ * @Test) and then reports the test results.
+ *
+ * The TestRunner has already been partially filled in for you. Iterate through TESTS (the static list of test classes)
+ * and use the reflection API to do the following:
+ *
+ * Make sure the test class implements UnitTest. You can do this with Class#isAssignableFrom()).
+ * Create an instance of the test class and cast it to be a UnitTest. You can do this by calling
+ * Class#getConstructor()) with no arguments, and then calling the newInstance()) method.
+ * For each method with the @Test annotation:
+ * Call UnitTest#beforeEachTest(), then invoke the test method (use Method#invoke()), and then call UnitTest#afterEachTest().
+ * If the test threw any errors, record that test as having failed. Otherwise, record that test as having passed.
+ * At the end of the main() method, you should print out the results (see below for an example).
+ *
+ * Compile and run the test runner to make sure it works. (Note: One unit test in CalculatorTest.java
+ * should intentionally fail — this is so that you can see what happens for both passing and failing tests.)
+ *
+ * javac TestRunner.java
+ * java -ea TestRunner
+ * Note: See the -ea JVM option? That stands for "enable assertions", which makes the assert statements
+ * in CalculatorTest.java actually throw AssertionErrors. There are much more robust assertion libraries
+ * out there (you'll see one such library in the course project), but for the purposes of this exercise,
+ * assert keeps things simple.
+ *
+ * After running the program, aim for output similar to this:
+ *
+ * Passed tests: [CalculatorTest#testAddition]
+ * FAILED tests: [CalculatorTest#testSubtraction]
  */
 
 }
