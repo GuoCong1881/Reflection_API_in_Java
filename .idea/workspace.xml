@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac75613a-b765-4e95-9cac-9a754c02c1de" name="Changes" comment="Defining custom annotation Exercise: built an in-house testing framework">
-      <change afterPath="$PROJECT_DIR$/src/DynamicProxy/LoggingProxyDemo.java" afterDir="false" />
+    <list default="true" id="ac75613a-b765-4e95-9cac-9a754c02c1de" name="Changes" comment="An example of dynamic proxy: to print log of each method called">
+      <change afterPath="$PROJECT_DIR$/src/DynamicProxy/ExerciseBackground.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProxy/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProxy/UdacisearchClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProxy/UdacisearchClientFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +47,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.LoggingProxyDemo">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Annotation.CartItem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Annotation.CartItem" />
       <module name="Reflection_API_in_Java" />
@@ -79,13 +82,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DynamicProxy.Main" />
+      <module name="Reflection_API_in_Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DynamicProxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.LoggingProxyDemo" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Annotation.CartItem" />
       <item itemvalue="Application.Annotation.TestRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.LoggingProxyDemo" />
         <item itemvalue="Application.Annotation.TestRunner" />
         <item itemvalue="Application.Annotation.CartItem" />
@@ -129,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665239604096</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="An example of dynamic proxy: to print log of each method called">
+      <created>1665245444986</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665245444986</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +172,7 @@
     <MESSAGE value="Start" />
     <MESSAGE value="Defining custom annotation" />
     <MESSAGE value="Defining custom annotation Exercise: built an in-house testing framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Defining custom annotation Exercise: built an in-house testing framework" />
+    <MESSAGE value="An example of dynamic proxy: to print log of each method called" />
+    <option name="LAST_COMMIT_MESSAGE" value="An example of dynamic proxy: to print log of each method called" />
   </component>
 </project>
